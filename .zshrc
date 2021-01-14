@@ -1,9 +1,20 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/go/bin:$PATH
 
+# Add Visual Studio Code
+export PATH=$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ayo/.oh-my-zsh"
 export FZF_BASE="/usr/local/bin/fzf"
+
+alias ip='ifconfig en0'
+alias spl='spotify play'
+alias spa='spotify pause'
+alias sps='spotify status'
+alias spn='spotify next'
+alias spp='spotify prev'
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -75,16 +86,13 @@ plugins=(
 	colored-man-pages
 	pip
 	osx
-	web-search
 	tmux
-	vscode
-	golang
 	fzf
-	vagrant
+    ansible
 )
 
 source $ZSH/oh-my-zsh.sh
-
+export GOPATH='/Users/ayo/go'
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
